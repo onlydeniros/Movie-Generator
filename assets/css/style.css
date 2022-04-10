@@ -1,0 +1,167 @@
+
+
+/* ------------------------------------ */
+
+/* font(s) plug in */
+/* @font-face {
+
+  font-family: MarketFont;
+  src: url(/assets/css/Market_Deco.ttf);
+
+
+
+} */
+
+* {
+  font-family: '';
+}
+
+a {
+  text-decoration: none;
+}
+
+#title {
+  font-size: 5rem;
+  color: #ffffff;
+}
+
+/* top middle */
+#c0 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#bec7d8, #460b0b, #000000);
+  z-index: 500;
+  box-shadow: 0px 20px 100px #ffffff;
+}
+
+/* top right */
+#c1 {
+  background: linear-gradient(#bec7d8, #677da5, #000000);
+  left: 100%;
+  z-index: 500;
+  box-shadow: 0px 20px 100px #ffffff;
+}
+
+/* top left */
+#c2 {
+  left: -100%;
+  z-index: 500;
+  background: linear-gradient(#bec7d8, #677da5, #000000);
+  box-shadow: 0px 20px 100px #ffffff;
+}
+
+/* bottom middle */
+#c3 {
+  position: absolute;
+  top: 78%;
+  width: 110%;
+  height: 100%;
+  left: -5%;
+  z-index: 400;
+  background: linear-gradient(#bec7d8, #677da5, #000000);
+  box-shadow: 0px 20px 100px #ffffff;
+}
+
+/* bottom left */
+#c4 {
+  position: absolute;
+  top: 78%;
+  width: 110%;
+  height: 100%;
+  left: -120%;
+  z-index: 400;
+  background: linear-gradient(#bec7d8, #677da5, #000000);
+  box-shadow: 0px 20px 100px #ffffff;
+}
+
+/* bottom right */
+#c5 {
+  position: absolute;
+  top: 78%;
+  width: 110%;
+  height: 100%;
+  left: 110%;
+  z-index: 400;
+  background: linear-gradient(#bec7d8, #677da5, #000000);
+  box-shadow: 0px 20px 100px #ffffff;
+}
+
+.container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
+
+.container:hover {
+  cursor: default;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+  border: 0.2rem solid;
+  border-color: #ffffff;
+}
+
+#background-page {
+  background: linear-gradient(to bottom, #3e6a85 45%, #000000 100%)
+}
+
+/* card font styles */
+#c0, #c1, #c2, #c3, #c4, #c5, #c6 {
+  color: aliceblue;
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+.wrapper {
+  position: absolute;
+  top: 12%;
+  left: 40%;
+  width: 300px;
+  height: 500px;
+  perspective: 900px;
+}
+
+
+
+@keyframes simple {
+  50% {
+    transform: translateX(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}
+
+@keyframes simple1 {
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+@keyframes entry {
+  0% {
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+
+/* ------------------------------------ */

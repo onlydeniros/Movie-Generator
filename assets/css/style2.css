@@ -1,0 +1,37 @@
+
+
+
+
+#background-page-2 {
+  background: linear-gradient(to bottom, #3e6a85 45%, #000000 100%)
+}
+
+#page-title {
+  color: aliceblue;
+  font-size: 7rem;
+}
+
+.movie-item {
+  border: white solid .2rem;
+  width: 14rem;
+  height: 20rem;
+  margin: 5rem;
+  transition: .5s all ease;
+}
+
+.movie-item:hover {
+  border: white solid .2rem;
+  transform: rotate(0deg) scale(1.57) translateZ(1rem);
+  transition: .5s all ease;
+  z-index: 100;
+}
+
+.extra-movie-info:hover {
+  z-index: 200;
+  background: linear-gradient(to bottom, #000000 100%)
+}
+
+.movie-name {
+  color: #ffffff;
+  font-size: 1.34rem;
+}
